@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:timely/modules/clock/clock_page.dart';
 import 'package:timely/modules/home/widgets/timely_tab_bar.dart';
 
 class HomePage extends StatefulWidget {
@@ -39,7 +40,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
             controller: _tabController,
             children: const [
               Icon(Icons.alarm),
-              Icon(Icons.watch_later_outlined),
+              ClockPage(),
               Icon(Icons.timer_outlined),
               Icon(Icons.hourglass_empty_outlined),
             ],

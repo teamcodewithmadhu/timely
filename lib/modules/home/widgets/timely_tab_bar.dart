@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:timely/shared/extensions.dart';
 
 class TabItem {
   final IconData icon;
@@ -75,6 +76,7 @@ class _TimelyTabBarState extends State<TimelyTabBar> {
               },
               selected: entry.key == _currentIndex,
               selectedColor: Colors.blue,
+              color: context.textTheme.caption!.color!,
             ),
           )
           .toList(),

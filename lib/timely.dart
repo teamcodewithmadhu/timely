@@ -12,6 +12,7 @@ class Timely extends StatelessWidget {
   Widget build(BuildContext context) {
     return ProviderScope(
       child: MaterialApp(
+        darkTheme: ThemeData.dark(),
         title: 'Timely',
         theme: ThemeData(
           primarySwatch: Colors.blue,
